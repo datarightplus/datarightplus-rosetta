@@ -1,5 +1,6 @@
 %%%
-Title = "DataRight+ Rosetta Stone"
+
+title = "DataRight+ Rosetta Stone"
 area = "Internet"
 workgroup = "datarightplus-parity"
 submissionType = "independent"
