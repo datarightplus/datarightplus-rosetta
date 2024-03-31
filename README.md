@@ -1,6 +1,6 @@
-# DR+ Rosetta Stone
+# DataRight+ Rosetta Stone
 
-This is the working area for the individual Internet-Draft, "DR+ Rosetta Stone".
+This is the working area for the individual Internet-Draft, "DataRight+ Rosetta Stone".
 
 * [Editor's Copy](https://datarightplus.github.io/datarightplus-rosetta/#go.draft-authors-datarightplus-rosetta.html)
 * [Datatracker Page](https://datatracker.ietf.org/doc/draft-authors-datarightplus-rosetta)
