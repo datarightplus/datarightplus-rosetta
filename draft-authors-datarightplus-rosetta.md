@@ -45,8 +45,23 @@ The scope of this document is limited to the conversion of terms utilised within
 
 This document defines the following terms:
 
+Certificate Practice Statement
+: A statement of the practices that a certification authority (CA) employs in issuing, suspending, revoking, and renewing certificates and providing access to them, in accordance with specific requirements.
+
+CDR
+:  Consumer Data Right
+
+CDR Sharing Arrangement
+: A legal construct, established by the [@!CDR-RULES] representing a disclosure consent between a Provider and a Initiator via a Software Product.
+
+CDR Sharing Arrangement Identifier
+: A unique and persistent identifier, typically a UUID or similar, that represents a reference to a CDR Sharing Arrangement.
+
 Consumer
-: A Consumer represents an individual or a business for which a User has been granted permissions to perform actions on behalf of.
+: A Consumer represents an individual or an entity for which a User has been granted permissions to perform actions on behalf of.
+
+Data Set Language
+: When requesting consent to conduct actions a Provider must present a description of the action or data being permitted. The Data Set Language is a prescription of what this text **MUST** be.
 
 Ecosystem Authority
 : The Ecosystem Authority represents the designated arbiter of trust between Providers, Initiators and the Consumer. Further elaboration on the Ecosystem Authority is provided within [@!DATARIGHTPLUS-ADMISSION-CONTROL].
@@ -54,11 +69,17 @@ Ecosystem Authority
 Electricity Authority
 : The Electricity Authority represents the holder of information pertaining to electricity meters and usage.
 
+Electricity Plan Website
+: The Electricity Plan Website represents the holder of information pertaining to electricity plan information
+
 Initiator
 : A Initiator is a client application which conducts activities with a Provider server. In an authorisation context a Initiator is analogous with an [@!OIDC-Core] Relying Party (RP).
 
-Initiator Brand
-: TODO
+Initiator Arrangement Revocation Endpoint (ICARE)
+: A specific URI for the purposes of issuing ICARE requests as described in [@!DATARIGHTPLUS-SHARING-ARRANGEMENT-V1-00].
+
+Initiator Base URI (IBU)
+: The Base URI used for all calls to Initiator hosted resource server endpoints.
 
 Personally Identifiable Information (PII)
 : Information that (a) can be used to identify the natural person to whom such information relates, or (b) is or might be directly or indirectly linked to a natural person to whom such information relates.
@@ -81,9 +102,11 @@ The following table provides a mapping from DataRight+ terminology to ecosystem 
 | Initiator Entity      | Data Recipient Legal Entity |
 | Initiator Base URI    | Recipient Base URI          |
 | Provider              | Data Holder Brand           |
+| Provider ID           | Data Holder Brand ID        |
 | Provider Entity       | Data Holder                 |
 | Consumer              | CDR Consumer                |
-| Ecosystem Authority   | CDR Register                |
+| Ecosystem Directory   | CDR Register                |
+| Ecosystem Authority   | ACCC                        |
 | User                  | User                        |
 | User Agent            | User Agent                  |
 
