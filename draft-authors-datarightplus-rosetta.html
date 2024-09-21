@@ -8,24 +8,23 @@
 <meta content="Stuart Low" name="author">
 <meta content="Ben Kolera" name="author">
 <meta content="
-       A rosetta stone for the DataRight Plus specifications. 
+       A rosetta stone for the DataRight+ specifications. 
     " name="description">
-<meta content="xml2rfc 3.20.1" name="generator">
+<meta content="xml2rfc 3.23.1" name="generator">
 <meta content="draft-authors-datarightplus-rosetta-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.20.1
-    Python 3.11.8
+  xml2rfc 3.23.1
+    Python 3.12.6
     ConfigArgParse 1.7
-    google-i18n-address 3.1.0
+    google-i18n-address 3.1.1
     intervaltree 3.1.0
-    Jinja2 3.1.2
-    lxml 4.9.3
-    platformdirs 4.2.0
+    Jinja2 3.1.4
+    lxml 4.9.4
+    platformdirs 4.3.6
     pycountry 22.3.5
     PyYAML 6.0.1
-    requests 2.31.0
-    setuptools 68.2.2
-    six 1.16.0
+    requests 2.32.3
+    setuptools 70.3.0
     wcwidth 0.2.13
 -->
 <link href="draft-authors-datarightplus-rosetta.xml" rel="alternate" type="application/rfc+xml">
@@ -1025,11 +1024,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">DataRight+ Rosetta Stone</td>
-<td class="right">March 2024</td>
+<td class="right">September 2024</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Low &amp; Kolera</td>
-<td class="center">Expires 2 October 2024</td>
+<td class="center">Expires 25 March 2025</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1042,12 +1041,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-authors-datarightplus-rosetta-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2024-03-31" class="published">31 March 2024</time>
+<time datetime="2024-09-21" class="published">21 September 2024</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2024-10-02">2 October 2024</time></dd>
+<dd class="expires"><time datetime="2025-03-25">25 March 2025</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1064,7 +1063,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <h1 id="title">DataRight+ Rosetta Stone</h1>
 <section id="section-abstract">
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
-<p id="section-abstract-1">A rosetta stone for the DataRight Plus specifications.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
+<p id="section-abstract-1">A rosetta stone for the DataRight+ specifications.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
 </section>
 <div id="status-of-memo">
 <section id="section-boilerplate.1">
@@ -1085,7 +1084,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 2 October 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 25 March 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1118,41 +1117,58 @@ svg :is([fill="white"], [fill^="#fff"]) {
             <p id="section-toc.1-1.2.1" class="keepWithNext"><a href="#section-2" class="auto internal xref">2</a>.  <a href="#name-terminology" class="internal xref">Terminology</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3">
-            <p id="section-toc.1-1.3.1"><a href="#section-3" class="auto internal xref">3</a>.  <a href="#name-ecosystem-specific-mappings" class="internal xref">Ecosystem Specific Mappings</a></p>
+            <p id="section-toc.1-1.3.1"><a href="#section-3" class="auto internal xref">3</a>.  <a href="#name-action-initiation" class="internal xref">Action Initiation</a></p>
 <ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.1">
-                <p id="section-toc.1-1.3.2.1.1"><a href="#section-3.1" class="auto internal xref">3.1</a>.  <a href="#name-australian-consumer-data-ri" class="internal xref">Australian Consumer Data Right</a></p>
+                <p id="section-toc.1-1.3.2.1.1" class="keepWithNext"><a href="#section-3.1" class="auto internal xref">3.1</a>.  <a href="#name-authorisation" class="internal xref">Authorisation</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.2">
+                <p id="section-toc.1-1.3.2.2.1"><a href="#section-3.2" class="auto internal xref">3.2</a>.  <a href="#name-action" class="internal xref">Action</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.3">
+                <p id="section-toc.1-1.3.2.3.1"><a href="#section-3.3" class="auto internal xref">3.3</a>.  <a href="#name-entity" class="internal xref">Entity</a></p>
+</li>
+            </ul>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4">
+            <p id="section-toc.1-1.4.1"><a href="#section-4" class="auto internal xref">4</a>.  <a href="#name-ecosystem-specific-mappings" class="internal xref">Ecosystem Specific Mappings</a></p>
 <ul class="compact toc ulBare ulEmpty">
-<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.1.2.1">
-                    <p id="section-toc.1-1.3.2.1.2.1.1" class="keepWithNext"><a href="#section-3.1.1" class="auto internal xref">3.1.1</a>.  <a href="#name-cdr-consumer" class="internal xref">CDR Consumer</a></p>
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.1">
+                <p id="section-toc.1-1.4.2.1.1"><a href="#section-4.1" class="auto internal xref">4.1</a>.  <a href="#name-australian-consumer-data-ri" class="internal xref">Australian Consumer Data Right</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.1.2.1">
+                    <p id="section-toc.1-1.4.2.1.2.1.1"><a href="#section-4.1.1" class="auto internal xref">4.1.1</a>.  <a href="#name-australian-competition-cons" class="internal xref">Australian Competition &amp; Consumer Commission (ACCC)</a></p>
 </li>
-                  <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.1.2.2">
-                    <p id="section-toc.1-1.3.2.1.2.2.1"><a href="#section-3.1.2" class="auto internal xref">3.1.2</a>.  <a href="#name-data-holder-brand" class="internal xref">Data Holder Brand</a></p>
+                  <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.1.2.2">
+                    <p id="section-toc.1-1.4.2.1.2.2.1"><a href="#section-4.1.2" class="auto internal xref">4.1.2</a>.  <a href="#name-cdr-consumer" class="internal xref">CDR Consumer</a></p>
 </li>
-                  <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.1.2.3">
-                    <p id="section-toc.1-1.3.2.1.2.3.1"><a href="#section-3.1.3" class="auto internal xref">3.1.3</a>.  <a href="#name-legal-entity" class="internal xref">Legal Entity</a></p>
+                  <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.1.2.3">
+                    <p id="section-toc.1-1.4.2.1.2.3.1"><a href="#section-4.1.3" class="auto internal xref">4.1.3</a>.  <a href="#name-data-holder-brand" class="internal xref">Data Holder Brand</a></p>
 </li>
-                  <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.1.2.4">
-                    <p id="section-toc.1-1.3.2.1.2.4.1"><a href="#section-3.1.4" class="auto internal xref">3.1.4</a>.  <a href="#name-data-recipient" class="internal xref">Data Recipient</a></p>
+                  <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.1.2.4">
+                    <p id="section-toc.1-1.4.2.1.2.4.1"><a href="#section-4.1.4" class="auto internal xref">4.1.4</a>.  <a href="#name-legal-entity" class="internal xref">Legal Entity</a></p>
 </li>
-                  <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.1.2.5">
-                    <p id="section-toc.1-1.3.2.1.2.5.1"><a href="#section-3.1.5" class="auto internal xref">3.1.5</a>.  <a href="#name-software-product" class="internal xref">Software Product</a></p>
+                  <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.1.2.5">
+                    <p id="section-toc.1-1.4.2.1.2.5.1"><a href="#section-4.1.5" class="auto internal xref">4.1.5</a>.  <a href="#name-data-recipient" class="internal xref">Data Recipient</a></p>
 </li>
-                  <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.1.2.6">
-                    <p id="section-toc.1-1.3.2.1.2.6.1"><a href="#section-3.1.6" class="auto internal xref">3.1.6</a>.  <a href="#name-cdr-register" class="internal xref">CDR Register</a></p>
+                  <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.1.2.6">
+                    <p id="section-toc.1-1.4.2.1.2.6.1"><a href="#section-4.1.6" class="auto internal xref">4.1.6</a>.  <a href="#name-software-product" class="internal xref">Software Product</a></p>
+</li>
+                  <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.1.2.7">
+                    <p id="section-toc.1-1.4.2.1.2.7.1"><a href="#section-4.1.7" class="auto internal xref">4.1.7</a>.  <a href="#name-cdr-register" class="internal xref">CDR Register</a></p>
 </li>
                 </ul>
 </li>
             </ul>
 </li>
-          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4">
-            <p id="section-toc.1-1.4.1"><a href="#section-4" class="auto internal xref">4</a>.  <a href="#name-acknowledgement" class="internal xref">Acknowledgement</a></p>
-</li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5">
-            <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-normative-references" class="internal xref">Normative References</a></p>
+            <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-acknowledgement" class="internal xref">Acknowledgement</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6">
-            <p id="section-toc.1-1.6.1"><a href="#appendix-A" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
+            <p id="section-toc.1-1.6.1"><a href="#section-6" class="auto internal xref">6</a>.  <a href="#name-normative-references" class="internal xref">Normative References</a></p>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7">
+            <p id="section-toc.1-1.7.1"><a href="#appendix-A" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
 </li>
         </ul>
 </nav>
@@ -1173,47 +1189,143 @@ svg :is([fill="white"], [fill^="#fff"]) {
       </h2>
 <p id="section-2-1">This document defines the following terms:<a href="#section-2-1" class="pilcrow">¶</a></p>
 <span class="break"></span><dl class="dlCompact dlParallel" id="section-2-2">
-        <dt id="section-2-2.1">Consumer</dt>
-        <dd style="margin-left: 1.5em" id="section-2-2.2">A Consumer represents an individual or a business for which a User has been granted permissions to perform actions on behalf of.<a href="#section-2-2.2" class="pilcrow">¶</a>
+        <dt id="section-2-2.1">Action Identifier</dt>
+        <dd style="margin-left: 1.5em" id="section-2-2.2">A Universally Unique Identifier (UUID) which references a specific action requested by an Initiator to a Provider<a href="#section-2-2.2" class="pilcrow">¶</a>
 </dd>
         <dd class="break"></dd>
-<dt id="section-2-2.3">Ecosystem Authority</dt>
-        <dd style="margin-left: 1.5em" id="section-2-2.4">The Ecosystem Authority represents the designated arbiter of trust between Providers, Initiators and the Consumer. Further elaboration on the Ecosystem Authority is provided within <span>[<a href="#DATARIGHTPLUS-ADMISSION-CONTROL" class="cite xref">DATARIGHTPLUS-ADMISSION-CONTROL</a>]</span>.<a href="#section-2-2.4" class="pilcrow">¶</a>
+<dt id="section-2-2.3">Agreement Identifier</dt>
+        <dd style="margin-left: 1.5em" id="section-2-2.4">A reference to a DataRight+ agreement identifier. Refer to the relevant DataRight+ profile for supported agreement types.<a href="#section-2-2.4" class="pilcrow">¶</a>
 </dd>
         <dd class="break"></dd>
-<dt id="section-2-2.5">Electricity Authority</dt>
-        <dd style="margin-left: 1.5em" id="section-2-2.6">The Electricity Authority represents the holder of information pertaining to electricity meters and usage.<a href="#section-2-2.6" class="pilcrow">¶</a>
+<dt id="section-2-2.5">Arrangement Identifier</dt>
+        <dd style="margin-left: 1.5em" id="section-2-2.6">A reference to a CDR related arrangement identifier, currently only CDR Sharing Arrangement Identifier is supported within the CDR ecosystem.<a href="#section-2-2.6" class="pilcrow">¶</a>
 </dd>
         <dd class="break"></dd>
-<dt id="section-2-2.7">Initiator</dt>
-        <dd style="margin-left: 1.5em" id="section-2-2.8">A Initiator is a client application which conducts activities with a Provider server. In an authorisation context a Initiator is analogous with an <span>[<a href="#OIDC-Core" class="cite xref">OIDC-Core</a>]</span> Relying Party (RP).<a href="#section-2-2.8" class="pilcrow">¶</a>
+<dt id="section-2-2.7">Banking Sector</dt>
+        <dd style="margin-left: 1.5em" id="section-2-2.8">Relates to the Holders, designated under the <span>[<a href="#CDR-RULES" class="cite xref">CDR-RULES</a>]</span> in the Banking industry<a href="#section-2-2.8" class="pilcrow">¶</a>
 </dd>
         <dd class="break"></dd>
-<dt id="section-2-2.9">Initiator Brand</dt>
-        <dd style="margin-left: 1.5em" id="section-2-2.10">TODO<a href="#section-2-2.10" class="pilcrow">¶</a>
+<dt id="section-2-2.9">Certificate Practice Statement</dt>
+        <dd style="margin-left: 1.5em" id="section-2-2.10">A statement of the practices that a certification authority (CA) employs in issuing, suspending, revoking, and renewing certificates and providing access to them, in accordance with specific requirements.<a href="#section-2-2.10" class="pilcrow">¶</a>
 </dd>
         <dd class="break"></dd>
-<dt id="section-2-2.11">Personally Identifiable Information (PII)</dt>
-        <dd style="margin-left: 1.5em" id="section-2-2.12">Information that (a) can be used to identify the natural person to whom such information relates, or (b) is or might be directly or indirectly linked to a natural person to whom such information relates.<a href="#section-2-2.12" class="pilcrow">¶</a>
+<dt id="section-2-2.11">CDR</dt>
+        <dd style="margin-left: 1.5em" id="section-2-2.12">Consumer Data Right<a href="#section-2-2.12" class="pilcrow">¶</a>
 </dd>
         <dd class="break"></dd>
-<dt id="section-2-2.13">Provider</dt>
-        <dd style="margin-left: 1.5em" id="section-2-2.14">A Provider is a piece of server infrastructure which receives requests from an Initiator. In an authorisation context a Provider is analogous with an <span>[<a href="#OIDC-Core" class="cite xref">OIDC-Core</a>]</span> OpenID Provider (OP).<a href="#section-2-2.14" class="pilcrow">¶</a>
+<dt id="section-2-2.13">CDR Sharing Arrangement</dt>
+        <dd style="margin-left: 1.5em" id="section-2-2.14">A legal construct, established by the <span>[<a href="#CDR-RULES" class="cite xref">CDR-RULES</a>]</span> representing a disclosure consent between a Provider and a Initiator via a Software Product.<a href="#section-2-2.14" class="pilcrow">¶</a>
 </dd>
         <dd class="break"></dd>
-<dt id="section-2-2.15">User</dt>
-        <dd style="margin-left: 1.5em" id="section-2-2.16">A User is a human who provides an identifier unique to the individual and for which correlates to one or more Consumer relationships. In an authorisation context a User is analogous with an <span>[<a href="#OIDC-Core" class="cite xref">OIDC-Core</a>]</span> End-User.<a href="#section-2-2.16" class="pilcrow">¶</a>
+<dt id="section-2-2.15">CDR Sharing Arrangement Identifier</dt>
+        <dd style="margin-left: 1.5em" id="section-2-2.16">A unique and persistent identifier, typically a UUID or similar, that represents a reference to a CDR Sharing Arrangement.<a href="#section-2-2.16" class="pilcrow">¶</a>
+</dd>
+        <dd class="break"></dd>
+<dt id="section-2-2.17">Consumer</dt>
+        <dd style="margin-left: 1.5em" id="section-2-2.18">A Consumer represents an individual or an entity for which a User has been granted permissions to perform actions on behalf of.<a href="#section-2-2.18" class="pilcrow">¶</a>
+</dd>
+        <dd class="break"></dd>
+<dt id="section-2-2.19">Data Set Language</dt>
+        <dd style="margin-left: 1.5em" id="section-2-2.20">When requesting consent to conduct actions a Provider must present a description of the action or data being permitted. The Data Set Language is a prescription of what this text <span class="bcp14">MUST</span> be.<a href="#section-2-2.20" class="pilcrow">¶</a>
+</dd>
+        <dd class="break"></dd>
+<dt id="section-2-2.21">Designated Holders</dt>
+        <dd style="margin-left: 1.5em" id="section-2-2.22">Designated Holders are organisations which belong to a designated sector, according to the <span>[<a href="#CDR-RULES" class="cite xref">CDR-RULES</a>]</span> and meet certain eligibility requirements to be required to deliver CDR services within their sector.<a href="#section-2-2.22" class="pilcrow">¶</a>
+</dd>
+        <dd class="break"></dd>
+<dt id="section-2-2.23">Ecosystem Authority</dt>
+        <dd style="margin-left: 1.5em" id="section-2-2.24">The Ecosystem Authority represents the designated arbiter of trust between Providers, Initiators and the Consumer. Further elaboration on the Ecosystem Authority is provided within <span>[<a href="#DATARIGHTPLUS-ADMISSION-CONTROL" class="cite xref">DATARIGHTPLUS-ADMISSION-CONTROL</a>]</span>.<a href="#section-2-2.24" class="pilcrow">¶</a>
+</dd>
+        <dd class="break"></dd>
+<dt id="section-2-2.25">Electricity Authority</dt>
+        <dd style="margin-left: 1.5em" id="section-2-2.26">The Electricity Authority represents the holder of information pertaining to electricity meters and usage.<a href="#section-2-2.26" class="pilcrow">¶</a>
+</dd>
+        <dd class="break"></dd>
+<dt id="section-2-2.27">Electricity Plan Website</dt>
+        <dd style="margin-left: 1.5em" id="section-2-2.28">The Electricity Plan Website represents the holder of information pertaining to electricity plan information<a href="#section-2-2.28" class="pilcrow">¶</a>
+</dd>
+        <dd class="break"></dd>
+<dt id="section-2-2.29">Energy Sector</dt>
+        <dd style="margin-left: 1.5em" id="section-2-2.30">Relates to the Designated Holders, designated under the <span>[<a href="#CDR-RULES" class="cite xref">CDR-RULES</a>]</span> in the Energy industry<a href="#section-2-2.30" class="pilcrow">¶</a>
+</dd>
+        <dd class="break"></dd>
+<dt id="section-2-2.31">Initiator</dt>
+        <dd style="margin-left: 1.5em" id="section-2-2.32">An Initiator is a client application which conducts activities with a Provider server. In an authorisation context a Initiator is analogous with an <span>[<a href="#OIDC-Core" class="cite xref">OIDC-Core</a>]</span> Relying Party (RP).<a href="#section-2-2.32" class="pilcrow">¶</a>
+</dd>
+        <dd class="break"></dd>
+<dt id="section-2-2.33">Initiator Arrangement Revocation Endpoint (ICARE)</dt>
+        <dd style="margin-left: 1.5em" id="section-2-2.34">A specific URI for the purposes of issuing ICARE requests as described in <span>[<a href="#DATARIGHTPLUS-SHARING-ARRANGEMENT-V1-00" class="cite xref">DATARIGHTPLUS-SHARING-ARRANGEMENT-V1-00</a>]</span>.<a href="#section-2-2.34" class="pilcrow">¶</a>
+</dd>
+        <dd class="break"></dd>
+<dt id="section-2-2.35">Initiator Base URI (IBU)</dt>
+        <dd style="margin-left: 1.5em" id="section-2-2.36">The Base URI used for all calls to Initiator hosted resource server endpoints.<a href="#section-2-2.36" class="pilcrow">¶</a>
+</dd>
+        <dd class="break"></dd>
+<dt id="section-2-2.37">Non-Functional Requirements</dt>
+        <dd style="margin-left: 1.5em" id="section-2-2.38">Refers to the performance requirements specified within the Non-Functional Requirements section of <span>[<a href="#CDS" class="cite xref">CDS</a>]</span><a href="#section-2-2.38" class="pilcrow">¶</a>
+</dd>
+        <dd class="break"></dd>
+<dt id="section-2-2.39">Personally Identifiable Information (PII)</dt>
+        <dd style="margin-left: 1.5em" id="section-2-2.40">Information that (a) can be used to identify the natural person to whom such information relates, or (b) is or might be directly or indirectly linked to a natural person to whom such information relates.<a href="#section-2-2.40" class="pilcrow">¶</a>
+</dd>
+        <dd class="break"></dd>
+<dt id="section-2-2.41">Provider</dt>
+        <dd style="margin-left: 1.5em" id="section-2-2.42">A Provider is a piece of server infrastructure which receives requests from an Initiator. In an authorisation context a Provider is analogous with an <span>[<a href="#OIDC-Core" class="cite xref">OIDC-Core</a>]</span> OpenID Provider (OP).<a href="#section-2-2.42" class="pilcrow">¶</a>
+</dd>
+        <dd class="break"></dd>
+<dt id="section-2-2.43">User</dt>
+        <dd style="margin-left: 1.5em" id="section-2-2.44">A User is a human who provides an identifier unique to the individual and for which correlates to one or more Consumer relationships. In an authorisation context a User is analogous with an <span>[<a href="#OIDC-Core" class="cite xref">OIDC-Core</a>]</span> End-User.<a href="#section-2-2.44" class="pilcrow">¶</a>
 </dd>
       <dd class="break"></dd>
 </dl>
 </section>
 </div>
-<div id="ecosystem-specific-mappings">
+<div id="action-initiation">
 <section id="section-3">
-      <h2 id="name-ecosystem-specific-mappings">
-<a href="#section-3" class="section-number selfRef">3. </a><a href="#name-ecosystem-specific-mappings" class="section-name selfRef">Ecosystem Specific Mappings</a>
+      <h2 id="name-action-initiation">
+<a href="#section-3" class="section-number selfRef">3. </a><a href="#name-action-initiation" class="section-name selfRef">Action Initiation</a>
       </h2>
-<p id="section-3-1">The following table provides a mapping from DataRight+ terminology to ecosystem specific terms.<a href="#section-3-1" class="pilcrow">¶</a></p>
+<p id="section-3-1">The DataRight+ specifications seek to extend functionality through the introduction of a formalised action initiation methodology. The primary intent is to establish a standardised pattern that is not purely limited to the sharing mandates of the CDR. In order to achieve these objectives there is a common entity relationship model adopted visualised as follows:<a href="#section-3-1" class="pilcrow">¶</a></p>
+<p id="section-3-2">+---------------+      +--------------+       +--------------+
+|               |      |              |       |              |
+| Authorisation |-0:1--&gt;    Action    +--0:n--&gt;    Entity    |
+|               |      |              |       |              |
++---------------+      +--------------+       +--------------+<a href="#section-3-2" class="pilcrow">¶</a></p>
+<div id="authorisation">
+<section id="section-3.1">
+        <h3 id="name-authorisation">
+<a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-authorisation" class="section-name selfRef">Authorisation</a>
+        </h3>
+<p id="section-3.1-1">An Authorisation refers to the OAuth2 authorisation associated with an Action.<a href="#section-3.1-1" class="pilcrow">¶</a></p>
+<p id="section-3.1-2">An authorisation <span class="bcp14">MUST NOT</span> be associated with more than one action. It is not currently expected that a single action will support multiple authorisations. To facilitate progressive authorisation a new action identifier would be generated to represent each progressive authorisation.<a href="#section-3.1-2" class="pilcrow">¶</a></p>
+<p id="section-3.1-3">There are circumstances where an Initiator may have already obtained access to the required data and therefore an authorisation <strong>MAY NOT</strong> be necessary. A common example of this is where an existing sharing agreement already grants access the data requested but the method of obtaining this data is changed, for example the action is an asynchronous retrieval of transaction data.<a href="#section-3.1-3" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="action">
+<section id="section-3.2">
+        <h3 id="name-action">
+<a href="#section-3.2" class="section-number selfRef">3.2. </a><a href="#name-action" class="section-name selfRef">Action</a>
+        </h3>
+<p id="section-3.2-1">Represents a single unit of work to deliver an entity resource outcome. An action alone completes regardless of the outcome being a success or failure. It does not represent a specific outcome or data set for the desired outcome but rather a resource of the process itself.<a href="#section-3.2-1" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="entity">
+<section id="section-3.3">
+        <h3 id="name-entity">
+<a href="#section-3.3" class="section-number selfRef">3.3. </a><a href="#name-entity" class="section-name selfRef">Entity</a>
+        </h3>
+<p id="section-3.3-1">An entity in the Action Initiation context refers to a resource, result or handle produced as a result of an action. In the context of a sharing agreement this would be a resource describing the agreement itself. Another example may be an authorised payment permission which is then used to initiate the payments themselves.<a href="#section-3.3-1" class="pilcrow">¶</a></p>
+<p id="section-3.3-2">Not all actions result in entities however in some cases one action may produce multiple entities. If and how many entities are produced is dependent on the individual action in question.<a href="#section-3.3-2" class="pilcrow">¶</a></p>
+</section>
+</div>
+</section>
+</div>
+<div id="ecosystem-specific-mappings">
+<section id="section-4">
+      <h2 id="name-ecosystem-specific-mappings">
+<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-ecosystem-specific-mappings" class="section-name selfRef">Ecosystem Specific Mappings</a>
+      </h2>
+<p id="section-4-1">The following table provides a mapping from DataRight+ terminology to ecosystem specific terms.<a href="#section-4-1" class="pilcrow">¶</a></p>
 <table class="center" id="table-1">
         <caption><a href="#table-1" class="selfRef">Table 1</a></caption>
 <thead>
@@ -1223,6 +1335,10 @@ svg :is([fill="white"], [fill^="#fff"]) {
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Agreement Identifier</td>
+            <td class="text-left" rowspan="1" colspan="1">Arrangement Identifier</td>
+          </tr>
           <tr>
             <td class="text-left" rowspan="1" colspan="1">Electricity Authority</td>
             <td class="text-left" rowspan="1" colspan="1">AEMO</td>
@@ -1248,6 +1364,10 @@ svg :is([fill="white"], [fill^="#fff"]) {
             <td class="text-left" rowspan="1" colspan="1">Data Holder Brand</td>
           </tr>
           <tr>
+            <td class="text-left" rowspan="1" colspan="1">Provider ID</td>
+            <td class="text-left" rowspan="1" colspan="1">Data Holder Brand ID</td>
+          </tr>
+          <tr>
             <td class="text-left" rowspan="1" colspan="1">Provider Entity</td>
             <td class="text-left" rowspan="1" colspan="1">Data Holder</td>
           </tr>
@@ -1256,8 +1376,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
             <td class="text-left" rowspan="1" colspan="1">CDR Consumer</td>
           </tr>
           <tr>
-            <td class="text-left" rowspan="1" colspan="1">Ecosystem Authority</td>
+            <td class="text-left" rowspan="1" colspan="1">Ecosystem Directory</td>
             <td class="text-left" rowspan="1" colspan="1">CDR Register</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">Ecosystem Authority</td>
+            <td class="text-left" rowspan="1" colspan="1">ACCC</td>
           </tr>
           <tr>
             <td class="text-left" rowspan="1" colspan="1">User</td>
@@ -1270,71 +1394,81 @@ svg :is([fill="white"], [fill^="#fff"]) {
         </tbody>
       </table>
 <div id="australian-consumer-data-right">
-<section id="section-3.1">
+<section id="section-4.1">
         <h3 id="name-australian-consumer-data-ri">
-<a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-australian-consumer-data-ri" class="section-name selfRef">Australian Consumer Data Right</a>
+<a href="#section-4.1" class="section-number selfRef">4.1. </a><a href="#name-australian-consumer-data-ri" class="section-name selfRef">Australian Consumer Data Right</a>
         </h3>
-<div id="cdr-consumer">
-<section id="section-3.1.1">
-          <h4 id="name-cdr-consumer">
-<a href="#section-3.1.1" class="section-number selfRef">3.1.1. </a><a href="#name-cdr-consumer" class="section-name selfRef">CDR Consumer</a>
+<div id="australian-competition-consumer-commission-accc">
+<section id="section-4.1.1">
+          <h4 id="name-australian-competition-cons">
+<a href="#section-4.1.1" class="section-number selfRef">4.1.1. </a><a href="#name-australian-competition-cons" class="section-name selfRef">Australian Competition &amp; Consumer Commission (ACCC)</a>
           </h4>
-<p id="section-3.1.1-1">A CDR Consumer is a business or individual who authorises the sharing of data stored by a CDR Data Holder on their behalf to a CDR Software Product with their permission. A User, regardless of their individual relationship with a Data Holder may also have access to zero or more non-individual Consumer's, for instance businesses that they have permission to make decisions for.<a href="#section-3.1.1-1" class="pilcrow">¶</a></p>
-<p id="section-3.1.1-2">It is critical to note that a CDR Consumer is the individual entity of which data is being shared or actions are being performed on. Within the CDR there are various relationship types including:<a href="#section-3.1.1-2" class="pilcrow">¶</a></p>
+<p id="section-4.1.1-1">The ACCC is the designated government entity empowered by legislation to operate as the Ecosystem Authority of the Australian Consumer Data Right.<a href="#section-4.1.1-1" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="cdr-consumer">
+<section id="section-4.1.2">
+          <h4 id="name-cdr-consumer">
+<a href="#section-4.1.2" class="section-number selfRef">4.1.2. </a><a href="#name-cdr-consumer" class="section-name selfRef">CDR Consumer</a>
+          </h4>
+<p id="section-4.1.2-1">A CDR Consumer is a business or individual who authorises the sharing of data stored by a CDR Data Holder on their behalf to a CDR Software Product with their permission. A User, regardless of their individual relationship with a Data Holder may also have access to zero or more non-individual Consumer's, for instance businesses that they have permission to make decisions for.<a href="#section-4.1.2-1" class="pilcrow">¶</a></p>
+<p id="section-4.1.2-2">It is critical to note that a CDR Consumer is the individual entity of which data is being shared or actions are being performed on. Within the CDR there are various relationship types including:<a href="#section-4.1.2-2" class="pilcrow">¶</a></p>
 <ul class="compact">
-<li class="compact" id="section-3.1.1-3.1">Nominated Representatives: Authorised representatives of a specific corporate entity, for instance a company director<a href="#section-3.1.1-3.1" class="pilcrow">¶</a>
+<li class="compact" id="section-4.1.2-3.1">Nominated Representatives: Authorised representatives of a specific corporate entity, for instance a company director<a href="#section-4.1.2-3.1" class="pilcrow">¶</a>
 </li>
-            <li class="compact" id="section-3.1.1-3.2">Secondary Users: Authorised parties who can access an individual Consumers data<a href="#section-3.1.1-3.2" class="pilcrow">¶</a>
+            <li class="compact" id="section-4.1.2-3.2">Secondary Users: Authorised parties who can access an individual Consumers data<a href="#section-4.1.2-3.2" class="pilcrow">¶</a>
 </li>
           </ul>
 </section>
 </div>
 <div id="data-holder-brand">
-<section id="section-3.1.2">
+<section id="section-4.1.3">
           <h4 id="name-data-holder-brand">
-<a href="#section-3.1.2" class="section-number selfRef">3.1.2. </a><a href="#name-data-holder-brand" class="section-name selfRef">Data Holder Brand</a>
+<a href="#section-4.1.3" class="section-number selfRef">4.1.3. </a><a href="#name-data-holder-brand" class="section-name selfRef">Data Holder Brand</a>
           </h4>
-<p id="section-3.1.2-1">For the purposes of this specification a Data Holder is described as the party who is offering or has offered services to the Consumer and/or holds relevant data related to those services on behalf of the Consumer.<a href="#section-3.1.2-1" class="pilcrow">¶</a></p>
-<p id="section-3.1.2-2">The types and format of that data is outside the scope of this particular specification but traditionally includes:<a href="#section-3.1.2-2" class="pilcrow">¶</a></p>
+<p id="section-4.1.3-1">For the purposes of this specification a Data Holder is described as the party who is offering or has offered services to the Consumer and/or holds relevant data related to those services on behalf of the Consumer.<a href="#section-4.1.3-1" class="pilcrow">¶</a></p>
+<p id="section-4.1.3-2">The types and format of that data is outside the scope of this particular specification but traditionally includes:<a href="#section-4.1.3-2" class="pilcrow">¶</a></p>
 <ul class="compact">
-<li class="compact" id="section-3.1.2-3.1">specific customer information such as name, addresses and phone numbers;<a href="#section-3.1.2-3.1" class="pilcrow">¶</a>
+<li class="compact" id="section-4.1.3-3.1">specific customer information such as name, addresses and phone numbers;<a href="#section-4.1.3-3.1" class="pilcrow">¶</a>
 </li>
-            <li class="compact" id="section-3.1.2-3.2">information related to services such as account numbers, pricing information and balances;<a href="#section-3.1.2-3.2" class="pilcrow">¶</a>
+            <li class="compact" id="section-4.1.3-3.2">information related to services such as account numbers, pricing information and balances;<a href="#section-4.1.3-3.2" class="pilcrow">¶</a>
 </li>
-            <li class="compact" id="section-3.1.2-3.3">transaction/ledger information pertaining to services provided<a href="#section-3.1.2-3.3" class="pilcrow">¶</a>
+            <li class="compact" id="section-4.1.3-3.3">transaction/ledger information pertaining to services provided<a href="#section-4.1.3-3.3" class="pilcrow">¶</a>
 </li>
           </ul>
-<p id="section-3.1.2-4">Within the CDR ecosystem the mandated Data Holders are ostensible Banking and Energy providers. Additional sectors can be designated by way of a legally binding Designation Instrument coupled with changes to the CDR Rules.<a href="#section-3.1.2-4" class="pilcrow">¶</a></p>
+<p id="section-4.1.3-4">Within the CDR ecosystem the mandated Data Holders are ostensible Banking and Energy providers. Additional sectors can be designated by way of a legally binding Designation Instrument coupled with changes to the CDR Rules.<a href="#section-4.1.3-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="legal-entity">
-<section id="section-3.1.3">
+<section id="section-4.1.4">
           <h4 id="name-legal-entity">
-<a href="#section-3.1.3" class="section-number selfRef">3.1.3. </a><a href="#name-legal-entity" class="section-name selfRef">Legal Entity</a>
-        </h4>
+<a href="#section-4.1.4" class="section-number selfRef">4.1.4. </a><a href="#name-legal-entity" class="section-name selfRef">Legal Entity</a>
+          </h4>
+<p id="section-4.1.4-1">A Legal Entity represents a company, corporation, trust or government organisation, as defined by the Australian Corporations Act.<a href="#section-4.1.4-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="data-recipient">
-<section id="section-3.1.4">
+<section id="section-4.1.5">
           <h4 id="name-data-recipient">
-<a href="#section-3.1.4" class="section-number selfRef">3.1.4. </a><a href="#name-data-recipient" class="section-name selfRef">Data Recipient</a>
+<a href="#section-4.1.5" class="section-number selfRef">4.1.5. </a><a href="#name-data-recipient" class="section-name selfRef">Data Recipient</a>
           </h4>
-<p id="section-3.1.4-1">A CDR Data Recipient is a party that provides activities, such as data sharing, through the Consumer who participates in the authorisation process initiated by a Initiator. Please refer to the expanded description of Provider within this document.<a href="#section-3.1.4-1" class="pilcrow">¶</a></p>
+<p id="section-4.1.5-1">A CDR Data Recipient is a party that provides activities, such as data sharing, through the Consumer who participates in the authorisation process initiated by a Initiator. Please refer to the expanded description of Provider within this document.<a href="#section-4.1.5-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="software-product">
-<section id="section-3.1.5">
+<section id="section-4.1.6">
           <h4 id="name-software-product">
-<a href="#section-3.1.5" class="section-number selfRef">3.1.5. </a><a href="#name-software-product" class="section-name selfRef">Software Product</a>
+<a href="#section-4.1.6" class="section-number selfRef">4.1.6. </a><a href="#name-software-product" class="section-name selfRef">Software Product</a>
           </h4>
-<p id="section-3.1.5-1">A Software Product is the listed value proposition, provided by a Data Recipient, which accesses a Data Holder Brand.<a href="#section-3.1.5-1" class="pilcrow">¶</a></p>
+<p id="section-4.1.6-1">A Software Product is the listed value proposition, provided by a Data Recipient, which accesses a Data Holder Brand.<a href="#section-4.1.6-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="cdr-register">
-<section id="section-3.1.6">
+<section id="section-4.1.7">
           <h4 id="name-cdr-register">
-<a href="#section-3.1.6" class="section-number selfRef">3.1.6. </a><a href="#name-cdr-register" class="section-name selfRef">CDR Register</a>
-        </h4>
+<a href="#section-4.1.7" class="section-number selfRef">4.1.7. </a><a href="#name-cdr-register" class="section-name selfRef">CDR Register</a>
+          </h4>
+<p id="section-4.1.7-1">The CDR Register is the technology infrastructure, operated by the ACCC delivering the Ecosystem Authority provisions outlined in <span>[<a href="#DATARIGHTPLUS-ADMISSION-CONTROL" class="cite xref">DATARIGHTPLUS-ADMISSION-CONTROL</a>]</span><a href="#section-4.1.7-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
@@ -1342,27 +1476,39 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </section>
 </div>
 <div id="acknowledgement">
-<section id="section-4">
+<section id="section-5">
       <h2 id="name-acknowledgement">
-<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-acknowledgement" class="section-name selfRef">Acknowledgement</a>
+<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-acknowledgement" class="section-name selfRef">Acknowledgement</a>
       </h2>
-<p id="section-4-1">The following people contributed to this document:<a href="#section-4-1" class="pilcrow">¶</a></p>
+<p id="section-5-1">The following people contributed to this document:<a href="#section-5-1" class="pilcrow">¶</a></p>
 <ul class="compact">
-<li class="compact" id="section-4-2.1">Stuart Low (Biza.io) - Editor<a href="#section-4-2.1" class="pilcrow">¶</a>
+<li class="compact" id="section-5-2.1">Stuart Low (Biza.io) - Editor<a href="#section-5-2.1" class="pilcrow">¶</a>
 </li>
-        <li class="compact" id="section-4-2.2">Ben Kolera (Biza.io)<a href="#section-4-2.2" class="pilcrow">¶</a>
+        <li class="compact" id="section-5-2.2">Ben Kolera (Biza.io)<a href="#section-5-2.2" class="pilcrow">¶</a>
 </li>
       </ul>
 </section>
 </div>
-<section id="section-5">
+<section id="section-6">
       <h2 id="name-normative-references">
-<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
+<a href="#section-6" class="section-number selfRef">6. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
       </h2>
 <dl class="references">
+<dt id="CDR-RULES">[CDR-RULES]</dt>
+      <dd>
+<span class="refAuthor">Treasury, Australian.</span>, <span class="refTitle">"Competition and Consumer (Consumer Data Right) Rules 2020"</span>, <time datetime="2023-07-22" class="refDate">22 July 2023</time>, <span>&lt;<a href="https://www.legislation.gov.au/F2020L00094">https://www.legislation.gov.au/F2020L00094</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="CDS">[CDS]</dt>
+      <dd>
+<span class="refAuthor">Data Standards Body (Treasury)</span>, <span class="refTitle">"Consumer Data Standards (CDS)"</span>, <span>&lt;<a href="https://consumerdatastandardsaustralia.github.io/standards">https://consumerdatastandardsaustralia.github.io/standards</a>&gt;</span>. </dd>
+<dd class="break"></dd>
 <dt id="DATARIGHTPLUS-ADMISSION-CONTROL">[DATARIGHTPLUS-ADMISSION-CONTROL]</dt>
       <dd>
 <span class="refAuthor">Low, S.</span>, <span class="refTitle">"DataRight+ Admission Control: Baseline"</span>, <span>&lt;<a href="https://datarightplus.github.io/datarightplus-admission-control/draft-datarightplus-admission-control.html">https://datarightplus.github.io/datarightplus-admission-control/draft-datarightplus-admission-control.html</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="DATARIGHTPLUS-SHARING-ARRANGEMENT-V1-00">[DATARIGHTPLUS-SHARING-ARRANGEMENT-V1-00]</dt>
+      <dd>
+<span class="refAuthor">Low, S.</span> and <span class="refAuthor">B. Kolera</span>, <span class="refTitle">"DataRight+: Sharing Arrangement V1"</span>, <span>&lt;<a href="https://datarightplus.github.io/datarightplus-sharing-arrangement-v1/draft-authors-datarightplus-sharing-arrangement-v1-00/draft-authors-datarightplus-sharing-arrangement-v1.html">https://datarightplus.github.io/datarightplus-sharing-arrangement-v1/draft-authors-datarightplus-sharing-arrangement-v1-00/draft-authors-datarightplus-sharing-arrangement-v1.html</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="OIDC-Core">[OIDC-Core]</dt>
     <dd>
