@@ -211,13 +211,16 @@ The following people contributed to this document:
 
 {backmatter}
 
-<reference anchor="CDR Rules" target="https://www.legislation.gov.au/F2020L00094"> <front> <title>Competition and Consumer (Consumer Data Right) Rules 2020</title> <author initials="Australian" surname="Treasury" fullname="Australian Treasury"> <organization>Australian Government</organization> </author><date day="22" month="Jul" year="2023"/> </front> </reference>
+<reference anchor="CDR-RULES" target="https://www.legislation.gov.au/F2020L00094"> <front> <title>Competition and Consumer (Consumer Data Right) Rules 2020</title> <author initials="Australian" surname="Treasury" fullname="Australian Treasury"> <organization>Australian Government</organization> </author><date day="22" month="Jul" year="2023"/> </front> </reference>
 
 <reference anchor="OIDC-Core" target="http://openid.net/specs/openid-connect-core-1_0.html"> <front> <title>OpenID Connect Core 1.0 incorporating errata set 1</title> <author initials="N." surname="Sakimura" fullname="Nat Sakimura"> <organization>NRI</organization> </author> <author initials="J." surname="Bradley" fullname="John Bradley"> <organization>Ping Identity</organization> </author> <author initials="M." surname="Jones" fullname="Mike Jones"> <organization>Microsoft</organization> </author> <author initials="B." surname="de Medeiros" fullname="Breno de Medeiros"> <organization>Google</organization> </author> <author initials="C." surname="Mortimore" fullname="Chuck Mortimore"> <organization>Salesforce</organization> </author> <date day="8" month="Nov" year="2014"/> </front> </reference>
 
 <reference anchor="DATARIGHTPLUS-ADMISSION-CONTROL" target="https://datarightplus.github.io/datarightplus-admission-control/draft-datarightplus-admission-control.html"> <front><title>DataRight+ Admission Control: Baseline</title><author initials="S." surname="Low" fullname="Stuart Low"><organization>Biza.io</organization></author></front> </reference>
 
 <reference anchor="CDS" target="https://consumerdatastandardsaustralia.github.io/standards"><front><title>Consumer Data Standards (CDS)</title><author><organization>Data Standards Body (Treasury)</organization></author></front> </reference>
+
+<reference anchor="DATARIGHTPLUS-SHARING-ARRANGEMENT-V1-00" target="https://datarightplus.github.io/datarightplus-sharing-arrangement-v1/draft-authors-datarightplus-sharing-arrangement-v1-00/draft-authors-datarightplus-sharing-arrangement-v1.html"> <front><title>DataRight+: Sharing Arrangement V1</title><author initials="S." surname="Low" fullname="Stuart Low"><organization>Biza.io</organization></author><author initials="B." surname="Kolera" fullname="Ben Kolera"><organization>Biza.io</organization></author></front> </reference>
+
 
 
 
