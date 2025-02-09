@@ -1,0 +1,350 @@
+
+
+
+
+datarightplus-parity                                              S. Low
+Internet-Draft                                                 B. Kolera
+Intended status: Informational                                   Biza.io
+Expires: 13 August 2025                                  9 February 2025
+
+
+                        DataRight+ Rosetta Stone
+               draft-authors-datarightplus-rosetta-latest
+
+Abstract
+
+   A rosetta stone for the DataRight+ specifications.
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at https://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on 13 August 2025.
+
+Copyright Notice
+
+   Copyright (c) 2025 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents (https://trustee.ietf.org/
+   license-info) in effect on the date of publication of this document.
+   Please review these documents carefully, as they describe your rights
+   and restrictions with respect to this document.
+
+Table of Contents
+
+   1.  Scope
+   2.  Terminology
+   3.  Action Initiation
+     3.1.  Authorisation
+     3.2.  Action
+     3.3.  Entity
+   4.  Ecosystem Specific Mappings
+     4.1.  Australian Consumer Data Right
+       4.1.1.  Australian Competition & Consumer Commission (ACCC)
+       4.1.2.  CDR Consumer
+       4.1.3.  Data Holder Brand
+       4.1.4.  Legal Entity
+       4.1.5.  Data Recipient
+       4.1.6.  Software Product
+       4.1.7.  CDR Register
+   5.  Acknowledgement
+   6.  Normative References
+   Authors' Addresses
+
+1.  Scope
+
+   The scope of this document is limited to the conversion of terms
+   utilised within the DataRight Plus specification suite to
+   jurisdictional terms within legal frameworks.  The intent of
+   delivering this document is to remove ambiguity from the broader
+   specification set by isolating, generally legal, terms within a
+   single document.
+
+2.  Terminology
+
+   This document defines the following terms:
+
+   Action Identifier  A Universally Unique Identifier (UUID) which
+      references a specific action requested by an Initiator to a
+      Provider
+   Agreement Identifier  A reference to a DataRight+ agreement
+      identifier.  Refer to the relevant DataRight+ profile for
+      supported agreement types.
+   Arrangement Identifier  A reference to a CDR related arrangement
+      identifier, currently only CDR Sharing Arrangement Identifier is
+      supported within the CDR ecosystem.
+   Banking Sector  Relates to the Holders, designated under the
+      [CDR-RULES] in the Banking industry
+   Certificate Practice Statement  A statement of the practices that a
+      certification authority (CA) employs in issuing, suspending,
+      revoking, and renewing certificates and providing access to them,
+      in accordance with specific requirements.
+   CDR  Consumer Data Right
+   CDR Sharing Arrangement  A legal construct, established by the
+      [CDR-RULES] representing a disclosure consent between a Provider
+      and a Initiator via a Software Product.
+   CDR Sharing Arrangement Identifier  A unique and persistent
+      identifier, typically a UUID or similar, that represents a
+      reference to a CDR Sharing Arrangement.
+   Consumer  A Consumer represents an individual or an entity for which
+      a User has been granted permissions to perform actions on behalf
+      of.
+   Data Set Language  When requesting consent to conduct actions a
+      Provider must present a description of the action or data being
+      permitted.  The Data Set Language is a prescription of what this
+      text MUST be.
+   Designated Holders  Designated Holders are organisations which belong
+      to a designated sector, according to the [CDR-RULES] and meet
+      certain eligibility requirements to be required to deliver CDR
+      services within their sector.
+   Ecosystem Authority  The Ecosystem Authority represents the
+      designated arbiter of trust between Providers, Initiators and the
+      Consumer.  Further elaboration on the Ecosystem Authority is
+      provided within [DATARIGHTPLUS-ADMISSION-CONTROL].
+   Electricity Authority  The Electricity Authority represents the
+      holder of information pertaining to electricity meters and usage.
+   Electricity Plan Website  The Electricity Plan Website represents the
+      holder of information pertaining to electricity plan information
+   Energy Sector  Relates to the Designated Holders, designated under
+      the [CDR-RULES] in the Energy industry
+   Initiator  An Initiator is a client application which conducts
+      activities with a Provider server.  In an authorisation context a
+      Initiator is analogous with an [OIDC-Core] Relying Party (RP).
+   Initiator Arrangement Revocation Endpoint (ICARE)  A specific URI for
+      the purposes of issuing ICARE requests as described in
+      [DATARIGHTPLUS-SHARING-ARRANGEMENT-V1-00].
+   Initiator Base URI (IBU)  The Base URI used for all calls to
+      Initiator hosted resource server endpoints.
+   Non-Functional Requirements  Refers to the performance requirements
+      specified within the Non-Functional Requirements section of [CDS]
+   Personally Identifiable Information (PII)  Information that (a) can
+      be used to identify the natural person to whom such information
+      relates, or (b) is or might be directly or indirectly linked to a
+      natural person to whom such information relates.
+   Provider  A Provider is a piece of server infrastructure which
+      receives requests from an Initiator.  In an authorisation context
+      a Provider is analogous with an [OIDC-Core] OpenID Provider (OP).
+   User  A User is a human who provides an identifier unique to the
+      individual and for which correlates to one or more Consumer
+      relationships.  In an authorisation context a User is analogous
+      with an [OIDC-Core] End-User.
+
+3.  Action Initiation
+
+   The DataRight+ specifications seek to extend functionality through
+   the introduction of a formalised action initiation methodology.  The
+   primary intent is to establish a standardised pattern that is not
+   purely limited to the sharing mandates of the CDR.  In order to
+   achieve these objectives there is a common entity relationship model
+   adopted visualised as follows:
+
+   +---------------+ +--------------+ +--------------+ | | | | | | |
+   Authorisation |-0:1--> Action +--0:n--> Entity | | | | | | |
+   +---------------+ +--------------+ +--------------+
+
+3.1.  Authorisation
+
+   An Authorisation refers to the OAuth2 authorisation associated with
+   an Action.
+
+   An authorisation MUST NOT be associated with more than one action.
+   It is not currently expected that a single action will support
+   multiple authorisations.  To facilitate progressive authorisation a
+   new action identifier would be generated to represent each
+   progressive authorisation.
+
+   There are circumstances where an Initiator may have already obtained
+   access to the required data and therefore an authorisation *MAY NOT*
+   be necessary.  A common example of this is where an existing sharing
+   agreement already grants access the data requested but the method of
+   obtaining this data is changed, for example the action is an
+   asynchronous retrieval of transaction data.
+
+3.2.  Action
+
+   Represents a single unit of work to deliver an entity resource
+   outcome.  An action alone completes regardless of the outcome being a
+   success or failure.  It does not represent a specific outcome or data
+   set for the desired outcome but rather a resource of the process
+   itself.
+
+3.3.  Entity
+
+   An entity in the Action Initiation context refers to a resource,
+   result or handle produced as a result of an action.  In the context
+   of a sharing agreement this would be a resource describing the
+   agreement itself.  Another example may be an authorised payment
+   permission which is then used to initiate the payments themselves.
+
+   Not all actions result in entities however in some cases one action
+   may produce multiple entities.  If and how many entities are produced
+   is dependent on the individual action in question.
+
+4.  Ecosystem Specific Mappings
+
+   The following table provides a mapping from DataRight+ terminology to
+   ecosystem specific terms.
+
+          +=======================+=============================+
+          | DataRight+            | Australian CDR              |
+          +=======================+=============================+
+          | Agreement Identifier  | Arrangement Identifier      |
+          +-----------------------+-----------------------------+
+          | Electricity Authority | AEMO                        |
+          +-----------------------+-----------------------------+
+          | Initiator             | Software Product            |
+          +-----------------------+-----------------------------+
+          | Initiator Brand       | Data Recipient Brand        |
+          +-----------------------+-----------------------------+
+          | Initiator Entity      | Data Recipient Legal Entity |
+          +-----------------------+-----------------------------+
+          | Initiator Base URI    | Recipient Base URI          |
+          +-----------------------+-----------------------------+
+          | Provider              | Data Holder Brand           |
+          +-----------------------+-----------------------------+
+          | Provider ID           | Data Holder Brand ID        |
+          +-----------------------+-----------------------------+
+          | Provider Entity       | Data Holder                 |
+          +-----------------------+-----------------------------+
+          | Consumer              | CDR Consumer                |
+          +-----------------------+-----------------------------+
+          | Ecosystem Directory   | CDR Register                |
+          +-----------------------+-----------------------------+
+          | Ecosystem Authority   | ACCC                        |
+          +-----------------------+-----------------------------+
+          | User                  | User                        |
+          +-----------------------+-----------------------------+
+          | User Agent            | User Agent                  |
+          +-----------------------+-----------------------------+
+
+                                  Table 1
+
+4.1.  Australian Consumer Data Right
+
+4.1.1.  Australian Competition & Consumer Commission (ACCC)
+
+   The ACCC is the designated government entity empowered by legislation
+   to operate as the Ecosystem Authority of the Australian Consumer Data
+   Right.
+
+4.1.2.  CDR Consumer
+
+   A CDR Consumer is a business or individual who authorises the sharing
+   of data stored by a CDR Data Holder on their behalf to a CDR Software
+   Product with their permission.  A User, regardless of their
+   individual relationship with a Data Holder may also have access to
+   zero or more non-individual Consumer's, for instance businesses that
+   they have permission to make decisions for.
+
+   It is critical to note that a CDR Consumer is the individual entity
+   of which data is being shared or actions are being performed on.
+   Within the CDR there are various relationship types including:
+
+   *  Nominated Representatives: Authorised representatives of a
+      specific corporate entity, for instance a company director
+   *  Secondary Users: Authorised parties who can access an individual
+      Consumers data
+
+4.1.3.  Data Holder Brand
+
+   For the purposes of this specification a Data Holder is described as
+   the party who is offering or has offered services to the Consumer
+   and/or holds relevant data related to those services on behalf of the
+   Consumer.
+
+   The types and format of that data is outside the scope of this
+   particular specification but traditionally includes:
+
+   *  specific customer information such as name, addresses and phone
+      numbers;
+   *  information related to services such as account numbers, pricing
+      information and balances;
+   *  transaction/ledger information pertaining to services provided
+
+   Within the CDR ecosystem the mandated Data Holders are ostensible
+   Banking and Energy providers.  Additional sectors can be designated
+   by way of a legally binding Designation Instrument coupled with
+   changes to the CDR Rules.
+
+4.1.4.  Legal Entity
+
+   A Legal Entity represents a company, corporation, trust or government
+   organisation, as defined by the Australian Corporations Act.
+
+4.1.5.  Data Recipient
+
+   A CDR Data Recipient is a party that provides activities, such as
+   data sharing, through the Consumer who participates in the
+   authorisation process initiated by a Initiator.  Please refer to the
+   expanded description of Provider within this document.
+
+4.1.6.  Software Product
+
+   A Software Product is the listed value proposition, provided by a
+   Data Recipient, which accesses a Data Holder Brand.
+
+4.1.7.  CDR Register
+
+   The CDR Register is the technology infrastructure, operated by the
+   ACCC delivering the Ecosystem Authority provisions outlined in
+   [DATARIGHTPLUS-ADMISSION-CONTROL]
+
+5.  Acknowledgement
+
+   The following people contributed to this document:
+
+   *  Stuart Low (Biza.io) - Editor
+   *  Ben Kolera (Biza.io)
+
+6.  Normative References
+
+   [CDR-RULES]
+              Treasury, Australian., "Competition and Consumer (Consumer
+              Data Right) Rules 2020", 22 July 2023,
+              <https://www.legislation.gov.au/F2020L00094>.
+
+   [CDS]      Data Standards Body (Treasury), "Consumer Data Standards
+              (CDS)", <https://consumerdatastandardsaustralia.github.io/
+              standards>.
+
+   [DATARIGHTPLUS-ADMISSION-CONTROL]
+              Low, S., "DataRight+ Admission Control: Baseline",
+              <https://datarightplus.github.io/datarightplus-admission-
+              control/draft-datarightplus-admission-control.html>.
+
+   [DATARIGHTPLUS-SHARING-ARRANGEMENT-V1-00]
+              Low, S. and B. Kolera, "DataRight+: Sharing Arrangement
+              V1", <https://datarightplus.github.io/datarightplus-
+              sharing-arrangement-v1/draft-authors-datarightplus-
+              sharing-arrangement-v1-00/draft-authors-datarightplus-
+              sharing-arrangement-v1.html>.
+
+   [OIDC-Core]
+              Sakimura, N., Bradley, J., Jones, M., de Medeiros, B., and
+              C. Mortimore, "OpenID Connect Core 1.0 incorporating
+              errata set 1", 8 November 2014,
+              <http://openid.net/specs/openid-connect-core-1_0.html>.
+
+Authors' Addresses
+
+   Stuart Low
+   Biza.io
+   Email: stuart@biza.io
+
+
+   Ben Kolera
+   Biza.io
+   Email: bkolera@biza.io
